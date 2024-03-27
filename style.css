@@ -9,6 +9,10 @@
     z-index: -1;
 }
 
+.body{
+    background-color: #ffe799;
+}
+
 img {
     user-select: none; /* 텍스트 선택 비활성화 */
     -moz-user-select: none; /* Firefox */
@@ -172,7 +176,7 @@ h3{
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
-    margin-top: 3em;
+    margin-top: 7em;
     z-index: 2;
     cursor: pointer;
     background-image: url('assets/right_arrow.png');
@@ -185,7 +189,7 @@ h3{
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
-    margin-top: 3em;
+    margin-top: 7em;
     z-index: 2;
     cursor: pointer;
     background-image: url('assets/left_arrow.png');

@@ -138,36 +138,45 @@ function selectGame(element) {
     var totalDis = 0.0;
 
     function scrollProjects(direction) {
-        totalDis += direction;
+        if(totalDis <= 1|| totalDis >= 0){
+            totalDis += direction;
+            if(totalDis >= 1){
+                totalDis = 1;
+            }
+            if(totalDis <= 0){
+                totalDis = 0;
+            }
 
-        // 스크롤할 요소 선택
-        var projectsContainer = document.querySelector('.projects');
-        
-        // 스크롤할 거리를 계산
-        var scrollDistance = window.innerWidth * direction;
-        
-        // 스크롤할 거리만큼 요소를 스크롤
-        projectsContainer.scrollBy({
-            left: scrollDistance,
-            behavior: 'smooth'
-        });
-        
-        // 좌우 화살표 버튼의 표시 여부를 결정
-        var leftArrow = document.getElementById('left-arrow');
-        var rightArrow = document.getElementById('right-arrow');
-        
-        if(totalDis === 1){
-            leftArrow.style.opacity = '1';
-            rightArrow.style.opacity = '0.5';
+            // 스크롤할 요소 선택
+            var projectsContainer = document.querySelector('.projects');
+            
+            // 스크롤할 거리를 계산
+            var scrollDistance = window.innerWidth * direction;
+            
+            // 스크롤할 거리만큼 요소를 스크롤
+            projectsContainer.scrollBy({
+                left: scrollDistance,
+                behavior: 'smooth'
+            });
+            
+            // 좌우 화살표 버튼의 표시 여부를 결정
+            var leftArrow = document.getElementById('left-arrow');
+            var rightArrow = document.getElementById('right-arrow');
+            
+            if(totalDis === 1){
+                leftArrow.style.opacity = '1';
+                rightArrow.style.opacity = '0.5';
+            }
+            else if(totalDis === 0){
+                leftArrow.style.opacity = '0.5';
+                rightArrow.style.opacity = '1';
+            }
+            else{
+                leftArrow.style.opacity = '1';
+                rightArrow.style.opacity = '1';
+            }
         }
-        else if(totalDis === 0){
-            leftArrow.style.opacity = '0.5';
-            rightArrow.style.opacity = '1';
-        }
-        else{
-            leftArrow.style.opacity = '1';
-            rightArrow.style.opacity = '1';
-        }
+        
 
     };
     
