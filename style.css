@@ -1,0 +1,247 @@
+#bg-video{
+    position: fixed;
+    left: 50vw;
+    transform: translate(-50%);
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter:blur(5px) brightness(0.6);
+    z-index: -1;
+}
+
+img {
+    user-select: none; /* 텍스트 선택 비활성화 */
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -ms-user-select: none; /* Internet Explorer */
+}
+
+div{
+    display: block;
+}
+
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.contnet {    
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+
+
+.home {
+    color: rgb(255, 255, 255);
+    text-align: center; 
+    height: 50vw;
+}
+
+.logo {
+    position: absolute;
+    width: 80vw;
+    left:10vw;
+}
+
+.logo-img {
+    width:40vw;
+}
+
+.bio{        
+    position: absolute;
+    margin-bottom: 20vw;
+    width:40em;
+    top: 30vw;
+    left: 50vw;
+    transform: translate(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 1em;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 0 0 9px rgb(29, 28, 19);
+}
+
+.biotxt{
+    margin-left: 2.5em;
+    color: black;
+}
+
+.bio-img{
+    position: absolute;
+    top: -10vw;
+    text-align: center;
+    height: 10vw;
+    transform: translate(-50%);
+}
+
+.bio-detail{
+    text-align: left;
+}
+
+.bio-detail span{
+    display: inline-block
+}
+
+h3{
+    text-align: left;
+}
+
+.bio-icons{
+    width: 3em;
+    transition: transform 0.3s ease;
+}
+
+.bio-icons:hover{
+    transform: scale(1.2);
+}
+
+.skillset{
+    border-radius: 0.8em;
+    text-decoration: none;
+    color:rgb(133, 189, 214);
+    background-color: rgb(29, 28, 19);
+    box-shadow: 0 0 0 4px rgb(29, 28, 19);
+}
+
+.skillset:hover{
+    text-decoration: none;
+    color:rgb(223, 207, 138);
+}
+
+.container-projects{
+    margin-top: 15em;
+}
+
+.projects{
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+#project-img{
+    height: 12vw;
+    margin: 1em;
+    background-size: auto 8em;
+    background-position: 50% 50%;
+}
+
+.project-detail{
+    width: calc(100% - 2em);
+    background-color: rgba(255, 255, 255, 0.7);
+    border-style: solid none solid none;
+    border-width: 0.5em;
+    border-color: rgb(29, 28, 19);
+    display: flex;
+    padding: 1em;
+    height: 13.688em;
+}
+
+#selected-game{
+    border-radius: 1em;
+    margin-right: 1em;
+    width: 20em;
+    box-shadow: 0 0 0 3px rgb(29, 28, 19);
+    object-fit: cover;
+}
+.detail-desc{
+    text-align: left;
+}
+
+.detail-link{
+    display: flex;
+    margin-top: 2vw;
+}
+
+#youtube-icon{
+    width: 3em;
+}
+#itch-icon{
+    width: 3em;
+}
+#github-icon{
+    width: 3em;
+}
+
+.projects-right-arrow{
+    width: 2.5em;
+    height: 5em;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    margin-top: 3em;
+    z-index: 2;
+    cursor: pointer;
+    background-image: url('assets/right_arrow.png');
+    right: 1em;
+}
+
+.projects-left-arrow{
+    width: 2.5em;
+    height: 5em;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    margin-top: 3em;
+    z-index: 2;
+    cursor: pointer;
+    background-image: url('assets/left_arrow.png');
+    left: 1em;
+}
+
+
+.skill-detail{
+    text-align: left;
+}
+
+.bigskill-img{
+    width: 12vw;
+    position: absolute;
+    top: -4vw;
+    text-align: center;
+    transform: translate(-50%);
+}
+
+.skill-img{
+    width: 16vw;
+    position: absolute;
+    top: -3vw;
+    text-align: center;
+    transform: translate(-50%);
+}
+
+.skilltxt{    
+    position: relative;
+    margin-bottom: 20vw;
+    width:40em;
+    top: 13vw;
+    left: 48vw;
+    transform: translate(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 1em;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 0 0 9px rgb(66, 65, 56);
+
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1em 0 1em;
+
+    margin-bottom: 15vw;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20vw;
+}
+
+.skill-logo{
+    position: relative;
+    text-align: center;
+    width: 80vw;
+    left:10vw;
+}

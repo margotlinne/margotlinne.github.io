@@ -1,0 +1,165 @@
+<!DOCTYPE html> 
+
+<html lnag="en">
+    <head>      
+        <script src="js/main.js" defer></script>
+          
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/icon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/icon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/icon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/icon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/icon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/icon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/icon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/icon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="assets/icon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/icon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
+        <link rel="manifest" href="assets/icon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="assets/icon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>LinneDev</title>
+    </head>
+
+
+
+    <body>
+
+        <video playsinline autoplay muted loop id="bg-video">
+            <source src="./assets/videos/bgvid.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <div class="home">
+                <div class="logo">
+                    <img src="./assets/logo.png" class="logo-img">                    
+                </div>
+
+                <div class="bio">
+                    <img src="./assets/profile.png" class="bio-img">
+                    <div class="biotxt">
+                        <h2>Hi there 👋 I'm Margot Linne</h2>
+                        <h3>📌 About me</h3>
+                        <div class="bio-detail">
+                            <span>- 🎓 Computer Engineering Graduate(2024.02, 3.65 GPA).</span>
+                            
+                            <span>- 🎮 Indie Game Developer who does coding and designing.</span>
+                            
+                            <span>- 📍 Located in South Korea. I speak Korean and English.</span>
+                            
+                            <span>- 🎭 LinneDev is my indie game developer name, Margot Linne is my English name.</span>
+                            
+                            <span>- 💼 Total part-time-job experiences: 5 years 4 months</span>
+                            
+                            <span>- 📚 3 years of experiences of making Unity2D game as an indie game developer. Currently working on Godot, Pygame, SDL2.</span>
+                        </div>
+                        <h4>check my <a href="skillset.html" class="skillset">skillset</a></h4>
+                    </div>
+
+                        <a href="https://www.youtube.com/channel/UCVz1upC0vpTMcWGpHT4CGBw" target="_blank" style="text-decoration: none">
+                            <img src="./assets/youtube_icon.png" class="bio-icons">
+                        </a>                      
+                        <a href="mailto:m.linnedev@gmail.com" target="_blank" style="text-decoration: none">
+                            <img src="./assets/gmail_icon.png" class="bio-icons">
+                        </a>
+                        <a href="https://margotlinne.itch.io/" target="_blank" style="text-decoration: none">
+                            <img src="./assets/itch_icon.png" class="bio-icons">
+                        </a>
+                        <a href="https://margotlinne.github.io/" target="_blank" style="text-decoration: none">
+                            <img src="./assets/github_icon.png" class="bio-icons">
+                        </a>
+                    
+                </div>
+
+            </div>
+
+
+            <div class="container-projects">
+                <div class="projects-right-arrow" id="right-arrow" onclick="scrollProjects(0.5);" style="opacity: 1;"></div>
+                <div class="projects-left-arrow" id="left-arrow" onclick="scrollProjects(-0.5);" style="opacity: 0.5;"></div>
+
+                <div class="projects" id="projects">
+                  <div class ="project" onclick="selectGame(this); return true;" style="opacity: 1;">
+                      <img src="./assets/thumb/cupup.png" id="project-img">
+                  </div>
+  
+                  <div class ="project" onclick="selectGame(this); return false;" style="opacity: 0.5;">
+                      <img src="./assets/thumb/koreanclass.png" id="project-img">
+                  </div>
+  
+                  <div class ="project" onclick="selectGame(this); return false;" style="opacity: 0.5;">
+                      <img src="./assets/thumb/flyingbee.png" id="project-img">
+                  </div>
+  
+                  <div class ="project" onclick="selectGame(this); return false;" style="opacity: 0.5;">
+                      <img src="./assets/thumb/journey.png" id="project-img">
+                  </div>
+  
+                  <div class ="project" onclick="selectGame(this); return false;" style="opacity: 0.5;">
+                      <img src="./assets/thumb/fallcup.png" id="project-img">
+                  </div>
+  
+                  <div class ="project" onclick="selectGame(this); return false;" style="opacity: 0.5;">
+                      <img src="./assets/thumb/attackbug.png" id="project-img">
+                  </div>
+  
+                  <div class ="project" onclick="selectGame(this); return false;" style="opacity: 0.5;">
+                      <img src="./assets/thumb/chased.png" id="project-img">
+                  </div>
+  
+                  <div class ="project" onclick="selectGame(this); return false;" style="opacity: 0.5;">
+                      <img src="./assets/thumb/steporfall.png" id="project-img">
+                  </div>
+  
+                  <div class ="project" onclick="selectGame(this); return false;" style="opacity: 0.5;">
+                      <img src="./assets/thumb/fallingbugs.png" id="project-img">
+                  </div>
+                </div>
+              </div>
+
+
+
+            <div class="project-detail">
+                <video playsinline autoplay muted loop id="selected-game">
+                    <source src="./assets/videos/cupup_playvid.mp4" type="video/mp4">
+                </video>
+                <div class="detail-text">
+                    <div class="detail-title"><h3>CUP: UP</h3></div>
+
+                    <div class="detail-desc">
+                        Platformer, Casual<br>
+                        Fly right by touching right side of screen and left by touching left side of screen.
+                    </div>
+
+                    <div class="detail-link">
+                        <a href="https://github.com/margotlinne/Unity2D-CupUp" id="github-link" target="_blank" style="display: block">
+                            <img src="./assets/github_icon.png" id="github-icon" class="bio-icons">
+                        </a>
+
+                        <a href="https://youtu.be/9yt4wDL3_XU" id="youtube-link" target="_blank" style="display: block;">
+                            <img src="./assets/youtube_icon.png" id="youtube-icon" class="bio-icons">
+                        </a>
+
+                        <a href="" id="itch-link" target="_blank" style="display: none;">
+                            <img src="./assets/itch_icon.png" id="itch-icon" class="bio-icons">
+                        </a>
+
+
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <h6 style="text-align: center;">created by Margot Linne</h6>   
+            
+        </div>
+
+        
+    </body>
+
+</html>
+
