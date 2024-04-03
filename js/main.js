@@ -32,6 +32,17 @@ function selectGame(element) {
     }
 
     var gameDetails = {
+        "servetheburger.png":{
+                                title: "Serve The Burger",
+                                desc: "Falling objects, Casual <br> Under developement at the moment. (04.2024 ~)",
+                                video: "./assets/videos/servetheburger_playvid.mp4",
+                                githublink: "",
+                                youtubelink: "",
+                                itchlink: "",
+                                displayyoutube: "none",
+                                displaygithub: "none",
+                                displayitch:"none"
+                                },
         "cupup.png": {
                         title: "CUP: UP",
                         desc: "Platformer, Casual <br> Fly right by touching right side of screen and left by touching left side of screen.",
