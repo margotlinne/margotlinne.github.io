@@ -34,14 +34,14 @@ function selectGame(element) {
     var gameDetails = {
         "servetheburger.png":{
                                 title: "Serve The Burger",
-                                desc: "Falling objects, Casual <br> Under developement at the moment. (04.2024 ~)",
+                                desc: "Falling objects, Casual <br> Stack up falling objects on the plate and finish burgers as many as you can.",
                                 video: "./assets/videos/servetheburger_playvid.mp4",
-                                githublink: "",
-                                youtubelink: "",
-                                itchlink: "",
-                                displayyoutube: "none",
-                                displaygithub: "none",
-                                displayitch:"none"
+                                githublink: "https://github.com/margotlinne/Godot2D-ServeTheBurger",
+                                youtubelink: "https://youtu.be/KsG8NTa3uyE",
+                                itchlink: "https://margotlinne.itch.io/serve-the-burger",
+                                displayyoutube: "block",
+                                displaygithub: "block",
+                                displayitch:"block"
                                 },
         "cupup.png": {
                         title: "CUP: UP",
