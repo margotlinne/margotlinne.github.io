@@ -59,19 +59,19 @@ video {
     position: absolute;
     margin-bottom: 20vw;
     width:40em;
-    top: 10vw;
+    top: 20vw;
     left: 50vw;
     transform: translate(-50%);
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 1em;
     padding: 1em;
     text-align: center;
-    box-shadow: 0 0 0 9px rgb(29, 28, 19);
+    box-shadow: 0 0 0 5px #272727;
 }
 
 .biotxt{
     margin-left: 1.5em;
-    color: black;
+    color: #272727;
 }
 
 .bio-img{
@@ -107,8 +107,8 @@ h3{
     border-radius: 0.8em;
     text-decoration: none;
     color:rgb(133, 189, 214);
-    background-color: rgb(29, 28, 19);
-    box-shadow: 0 0 0 4px rgb(29, 28, 19);
+    background-color: #272727;
+    box-shadow: 0 0 0 4px #272727;
 }
 
 .skillset:hover{
@@ -138,7 +138,7 @@ h3{
     background-color: rgba(255, 255, 255, 0.7);
     border-style: solid none solid none;
     border-width: 0.5em;
-    border-color: rgb(29, 28, 19);
+    border-color: #272727;
     display: flex;
     padding: 1em;
     height: 13.688em;
@@ -148,7 +148,7 @@ h3{
     border-radius: 1em;
     margin-right: 1em;
     width: 20em;
-    box-shadow: 0 0 0 3px rgb(29, 28, 19);
+    box-shadow: 0 0 0 3px #272727;
     object-fit: cover;
 }
 .detail-desc{
