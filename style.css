@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: #ffe799;
+    background-color: #272727;
 }
 
 img {
@@ -59,7 +59,7 @@ video {
     position: absolute;
     margin-bottom: 20vw;
     width:40em;
-    top: 30vw;
+    top: 10vw;
     left: 50vw;
     transform: translate(-50%);
     background-color: rgba(255, 255, 255, 0.7);
